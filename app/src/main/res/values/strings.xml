@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">PayIt</string>
+
+    <!-- Strings for sign up -->
+    <string name="prompt_fName">First Name</string>
+    <string name="prompt_lName">Last Name</string>
+    <string name="prompt_phone">Mobile Number</string>
+    <string name="action_sign_up">CREATE ACCOUNT</string>
+    <string name="link_login">Already a member? Login</string>
+    <string name="action_pay">Pay</string>
+    <string name="action_collect">Collect</string>
+    <string name="prompt_uName">User Name</string>
+    <string name="prompt_otp">Enter OTP</string>
+    <string name="prompt_verifyOTP">Verify</string>
+
+    <string-array name="bankNames">
+        <item>ICICI</item>
+        <item>HDFC</item>
+        <item>SBI</item>
+        <item>Axis</item>
+        <item>UCO</item>
+    </string-array>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_login">Login</string>
+    <string name="ime_label_sign_in">Sign in</string>
+    <string name="link_sign_up">No account yet? Create one</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_short_password">This password is too short</string>
+    <string name="error_invalid_password">This password is not strong</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email completions."</string>
+    <string name="amount">20</string>
+
+</resources>

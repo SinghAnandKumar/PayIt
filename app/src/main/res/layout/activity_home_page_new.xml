@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+    <!--android:background="@drawable/background"-->
+
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_bar_height"
+        android:fitsSystemWindows="true"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/AppTheme.PopupOverlay">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Hi UserName"
+                    android:gravity="center_horizontal"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#FFF"
+                    android:id="@+id/tvHeader"/>
+
+            </android.support.v7.widget.Toolbar>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@android:color/transparent">
+
+                <android.support.v7.widget.AppCompatButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/action_collect"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/material_btn_text_size"
+                    android:layout_marginLeft="@dimen/material_btn_margin_hor"
+                    android:layout_marginRight="@dimen/material_btn_margin_hor"
+                    android:layout_marginTop="@dimen/btn_margin_ver"
+                    android:layout_marginBottom="@dimen/btn_margin_ver"
+                    android:background="@drawable/btn_frame"
+                    android:id="@+id/btnCollect"/>
+
+                <android.support.v7.widget.AppCompatButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/action_pay"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/material_btn_text_size"
+                    android:layout_marginLeft="@dimen/material_btn_margin_hor"
+                    android:layout_marginRight="@dimen/material_btn_margin_hor"
+                    android:layout_marginTop="@dimen/btn_margin_ver"
+                    android:layout_marginBottom="@dimen/btn_margin_ver"
+                    android:background="@drawable/btn_frame"
+                    android:id="@+id/btnPay"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:background="@drawable/shadow" />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+        <include layout="@layout/transaction_list"></include>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

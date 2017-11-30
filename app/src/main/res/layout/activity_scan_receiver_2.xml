@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".activities.ScanReceiverActivity_2">
+
+    <com.skyfishjy.library.RippleBackground xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/ripple_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:rb_color="@color/colorPrimary"
+        app:rb_duration="3000"
+        app:rb_radius="32dp"
+        app:rb_rippleAmount="4"
+        app:rb_scale="6">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/centerImage"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/logo_white_bg" />
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/receiver1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/centerImage"
+                android:layout_marginTop="50dp"
+                android:gravity="center"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/circular_dp1"
+                    android:layout_width="@dimen/material_circular_view"
+                    android:layout_height="@dimen/material_circular_view"
+                    android:layout_centerHorizontal="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_man" />
+
+                <TextView
+                    android:id="@+id/beneficiary_name1"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/circular_dp1"
+                    android:layout_centerHorizontal="true"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="2"
+                    android:text="Receiver1" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="50dp"
+                android:layout_below="@+id/centerImage"
+                android:id="@+id/receiver2"
+                android:gravity="center"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/circular_dp2"
+                    android:layout_width="@dimen/material_circular_view"
+                    android:layout_height="@dimen/material_circular_view"
+                    android:layout_centerHorizontal="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_man" />
+
+                <TextView
+                    android:id="@+id/beneficiary_name2"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/circular_dp2"
+                    android:layout_centerHorizontal="true"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="2"
+                    android:text="Receiver2" />
+            </RelativeLayout>
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/receiver3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignRight="@+id/centerImage"
+                android:layout_marginTop="50dp"
+                android:gravity="center"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/circular_dp3"
+                    android:layout_width="@dimen/material_circular_view"
+                    android:layout_height="@dimen/material_circular_view"
+                    android:layout_centerHorizontal="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_man" />
+
+                <TextView
+                    android:id="@+id/beneficiary_name3"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/circular_dp3"
+                    android:layout_centerHorizontal="true"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="2"
+                    android:text="Receiver3" />
+            </RelativeLayout>
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/receiver4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toEndOf="@+id/centerImage"
+                android:layout_marginTop="50dp"
+                android:visibility="gone"
+                android:gravity="center"
+                android:layout_toRightOf="@+id/receiver2">
+
+                <ImageView
+                    android:id="@+id/circular_dp4"
+                    android:layout_width="@dimen/material_circular_view"
+                    android:layout_height="@dimen/material_circular_view"
+                    android:layout_centerHorizontal="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_man" />
+
+                <TextView
+                    android:id="@+id/beneficiary_name4"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/circular_dp4"
+                    android:layout_centerHorizontal="true"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="2"
+                    android:text="Receiver4" />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </com.skyfishjy.library.RippleBackground>
+
+</RelativeLayout>
